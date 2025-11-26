@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pl-PL" class="jasny" id="html">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kalkulator</title>
+    <link rel="stylesheet" href="kalkulator.css" /> <!-- style dla index.html -->
+    <link rel="stylesheet" href="style.css" /> <!-- style wspólne -->
+
+    <link rel="stylesheet" href="fontello-ea482b8a/css/fontello.css" /> <!--ikony fontello (pobrane z fontello.com)-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.11.0/math.min.js"></script> <!--biblioteka math-->
+  </head>
+
+  <body>
+    <nav>
+      <a class="zakladka" id="tuJestes">Kalkulator</a>
+      <a href="systemyLiczbowe/systemyLiczbowe.html" class="zakladka">Systemy Liczbowe</a>
+      <a href="wiecej/wiecej.html" class="zakladka">Więcej</a>
+    </nav>
+    <article>
+      <div id="wyswietlacz">0</div>
+
+      <div id="przyciski">
+        <!-- Górny rząd -->
+        <div class="przycisk przycisk--spec" onclick="usun()">C</div>
+        <div class="przycisk przycisk--spec" id="pierwiastek"><div class="otwarcie"><i class="icon-math"></i>sqrt(</div></div>
+        <div class="przycisk przycisk--spec">%</div>
+        <div class="przycisk przycisk--op" id="dzielenie"><i class="icon-divide"></i>/</div>
+
+        <!-- Liczby i operatory -->
+        <div class="przycisk">7</div>
+        <div class="przycisk">8</div>
+        <div class="przycisk">9</div>
+        <div class="przycisk przycisk--op" id="mnozenie"><i class="icon-cancel"></i>*</div>
+
+        <div class="przycisk">4</div>
+        <div class="przycisk">5</div>
+        <div class="przycisk">6</div>
+        <div class="przycisk przycisk--op">-</div>
+
+        <div class="przycisk">1</div>
+        <div class="przycisk">2</div>
+        <div class="przycisk">3</div>
+        <div class="przycisk przycisk--op">+</div>
+
+        <!-- Dolny rząd -->
+        <div
+          class="przycisk"
+          style="margin-left: 10px; width: 210px; border-radius: 200px"
+        >0</div>
+        <div class="przycisk">.</div>
+        <div class="przycisk przycisk--op" onclick="liczenie()">=</div>
+      </div>
+    </article>
+
+    <script src="kalkulator.js"></script><!--Funkcje Javascript-->
+  </body>
+</html>
