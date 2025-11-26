@@ -20,7 +20,6 @@ article {
   border-radius: 35px;
   box-shadow: 0 0 5em 1.5em rgba(0, 0, 0, 0.61);
   backdrop-filter: blur(3vw);
-  zoom: 0.7;
 }
 
 nav {
@@ -138,4 +137,5 @@ a:active {
 .ciemny #tuJestes {
   background-color: rgba(238, 3, 255, 0.926);
 }
+
 
