@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pl-PL" class="jasny" id="html">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kalkulator</title>
+  <link rel="stylesheet" href="systemyLiczbowe.css" /> <!-- style dla systemyLiczbowe.html-->
+  <link rel="stylesheet" href="../style.css" /> <!-- style wspólne -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.11.0/math.min.js"></script> <!--biblioteka math-->
+</head>
+
+<body class="jasny">
+  <nav>
+    <a href="../index.html" class="zakladka">Kalkulator</a>
+    <a class="zakladka" id="tuJestes">Systemy Liczbowe</a>
+    <a href="../wiecej/wiecej.html" class="zakladka">Więcej</a>
+  </nav>
+  <article>
+    <h1>Konwersja Systemów Liczbowych</h1><br>
+
+    <div id="content">
+      <div class="pole-wejsciowe">
+        <input type="text" placeholder="Binarny (Bin)" id="binarny" autocomplete="off">
+      </div>
+      <div class="pole-wejsciowe">
+        <input type="text" placeholder="Oktalny (Oct)" id="oktalny" autocomplete="off">
+      </div>
+      <div class="pole-wejsciowe">
+        <input type="text" placeholder="Dziesiętny (Dec)" id="dziesietny" autocomplete="off">
+      </div>
+      <div class="pole-wejsciowe">
+        <input type="text" placeholder="Heksadecymalny (Hex)" id="heksadecymalny" autocomplete="off">
+      </div>
+    </div>
+
+  </article>
+  <script src="systemyLiczbowe.js"></script> <!--Funkcje Javascript-->
+</body>
+
+</html>

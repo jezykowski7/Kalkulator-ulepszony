@@ -1,0 +1,44 @@
+ 
+ /* plik zawiera tylko style dla strony wiecej.html*/
+
+ .przyciski {
+     margin: 0 auto 0 auto;
+     width: 350px;
+     height: 100px;
+     background-color: rgba(240, 113, 74, 0.349);
+     border-radius: 25px;
+     border: 7px solid rgba(219, 79, 23, 0.897);
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-size: 35px;
+     transition: 0.4s ease;
+ }
+
+ #motyw {
+     margin-top: 200px;
+ }
+
+ #historia {
+     margin-top: 100px;
+ }
+
+ /* ================== JASNY MOTYW ====================== */
+
+ .jasny .przyciski {
+     background-color: rgba(240, 113, 74, 0.349);
+     border: 7px solid rgba(219, 79, 23, 0.897);
+ }
+ .jasny .przyciski:hover{
+    background-color: rgba(255, 165, 137, 0.349);
+ }
+
+ /* ================== CIEMNY MOTYW ====================== */
+
+ .ciemny .przyciski {
+     background-color: rgb(188, 30, 209);
+     border: 7px solid rgb(173, 2, 167);
+ }
+ .ciemny .przyciski:hover{
+     background-color: rgb(232, 102, 249);
+ }
