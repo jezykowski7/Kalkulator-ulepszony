@@ -63,16 +63,16 @@ a:active {
   padding-left: 18px;
 }
 
-@media (max-width: 385px) {
+@media (max-width: 550px) {
   article {
-    zoom: 0.4;
+    zoom: 0.6;
   }
   nav {
-    zoom: 0.4;
+    zoom: 0.6;
   }
 }
 
-@media (max-height: 518px) {
+@media (max-height: 740px) {
   article {
     zoom: 0.4;
   }
@@ -138,3 +138,4 @@ a:active {
 .ciemny #tuJestes {
   background-color: rgba(238, 3, 255, 0.926);
 }
+
