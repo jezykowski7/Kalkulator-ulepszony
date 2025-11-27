@@ -63,37 +63,11 @@ a:active {
   padding-left: 18px;
 }
 
-@media (max-width: 480px) {
-  body {
-    padding: 10px;
-  }
-
-  article {
-    width: 95vw;
-    height: auto;
-    padding: 20px 10px;
-    border-radius: 25px;
-    box-shadow: 0 0 3em 1em rgba(0,0,0,0.5);
-  }
-
-  nav {
-    width: 40px;
-  }
-
-  .zakladka {
-    font-size: 16px;
-    width: 70px;
-    height: 180px;
-    padding-left: 10px;
-  }
-
-  .zakladka:hover {
-    transform: translateX(-15px);
-  }
-
-  #tuJestes {
-    transform: translateX(-5px);
-    padding-left: 12px;
+@media (max-height: 600px),
+(max-width: 480px) {
+  nav,
+  article{
+    zoom: 0.5;
   }
 }
 
@@ -154,3 +128,4 @@ a:active {
 .ciemny #tuJestes {
   background-color: rgba(238, 3, 255, 0.926);
 }
+
