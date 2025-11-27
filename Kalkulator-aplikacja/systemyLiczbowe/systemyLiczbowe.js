@@ -1,15 +1,14 @@
 
 /* plik zawiera tylko skrypty dla strony systemyLiczbowe.html*/
 
-const htmlEl = document.documentElement;
+
 // Ustawienie motywu przy starcie
+const html = document.getElementById("html");
 if(localStorage.getItem("motyw") === "1") {
-    htmlEl.classList.add("ciemny");
+    html.classList.add("ciemny");
 } else {
-    htmlEl.classList.remove("ciemny");
+    html.classList.remove("ciemny");
 }
-
-
 
 
 const bin = document.getElementById('binarny');
