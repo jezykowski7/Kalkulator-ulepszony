@@ -20,11 +20,12 @@ article {
   border-radius: 35px;
   box-shadow: 0 0 5em 1.5em rgba(0, 0, 0, 0.61);
   backdrop-filter: blur(3vw);
+  zoom: 0.8;
 }
 
 nav {
   width: 50px;
-  zoom: 0.7;
+  zoom: 0.8;
 }
 
 a {
@@ -62,21 +63,37 @@ a:active {
   padding-left: 18px;
 }
 
-@media (max-width: 550px) {
-  article {
-    zoom: 0.6;
+@media (max-width: 480px) {
+  body {
+    padding: 10px;
   }
-  nav {
-    zoom: 0.6;
-  }
-}
 
-@media (max-height: 740px) {
   article {
-    zoom: 0.4;
+    width: 95vw;
+    height: auto;
+    padding: 20px 10px;
+    border-radius: 25px;
+    box-shadow: 0 0 3em 1em rgba(0,0,0,0.5);
   }
+
   nav {
-    zoom: 0.4;
+    width: 40px;
+  }
+
+  .zakladka {
+    font-size: 16px;
+    width: 70px;
+    height: 180px;
+    padding-left: 10px;
+  }
+
+  .zakladka:hover {
+    transform: translateX(-15px);
+  }
+
+  #tuJestes {
+    transform: translateX(-5px);
+    padding-left: 12px;
   }
 }
 
@@ -137,5 +154,3 @@ a:active {
 .ciemny #tuJestes {
   background-color: rgba(238, 3, 255, 0.926);
 }
-
-
