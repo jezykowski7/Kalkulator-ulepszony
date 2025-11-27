@@ -67,7 +67,7 @@ a:active {
 (max-width: 480px) {
   nav,
   article{
-    zoom: 0.5;
+    zoom: 0.6;
   }
 }
 
@@ -128,4 +128,5 @@ a:active {
 .ciemny #tuJestes {
   background-color: rgba(238, 3, 255, 0.926);
 }
+
 
