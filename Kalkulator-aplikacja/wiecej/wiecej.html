@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pl-PL" class="jasny" id="html">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kalkulator</title>
+    <link rel="stylesheet" href="wiecej.css" /> <!-- style dla wiecej.html -->
+    <link rel="stylesheet" href="../style.css" /> <!-- style wspólne -->
+
+    <link rel="stylesheet" href="../fontello-20b0d37c/css/fontello.css" /> <!--ikony fontello (pobrane z fontello.com)-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.11.0/math.min.js"></script> <!--biblioteka math-->
+  </head>
+
+  <body>
+    <nav>
+      <a href="../index.html" class="zakladka">Kalkulator</a>
+      <a href="../systemyLiczbowe/systemyLiczbowe.html" class="zakladka">Systemy Liczbowe</a>
+      <a id="tuJestes" class="zakladka">Więcej</a>
+    </nav>
+    <article>
+      <div id="motyw" class="przyciski">Motyw:<i class="icon-sun" id="ikona"></i></div>
+      <div id="historia" class="przyciski" onclick="wlaczhistorie()">Historia obliczeń:<i class="icon-history" id="ikona-strzałka"></i></div>
+    </article>
+    <script src="wiecej.js"></script><!--Funkcje Javascript-->
+  </body>
+</html>
