@@ -1,0 +1,117 @@
+/* plik zawiera tylko style dla strony wiecej.html*/
+
+.przyciski {
+   margin: 0 auto 0 auto;
+   width: 350px;
+   height: 100px;
+   background-color: rgba(240, 113, 74, 0.349);
+   border-radius: 25px;
+   border: 7px solid rgba(219, 79, 23, 0.897);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 35px;
+   transition: 0.4s ease;
+}
+
+#motyw {
+   margin-top: 200px;
+}
+
+#historia {
+   margin-top: 100px;
+}
+
+.pojemnikNaHistorie {
+   height: 740px;
+   line-height: 40px;
+   font-size: 20px;
+   width: 500px;
+}
+
+.tresc {
+   float: left;
+   width: 370px;
+   height: 700px;
+   margin: 15px 15px 15px 15px;
+   padding-left: 10px;
+   border-radius: 20px;
+   transition: 0.4s ease;
+   user-select: text;
+}
+
+h3{
+   user-select: text;
+}
+
+.przyciskiHistorii {
+   float: left;
+}
+
+.czysc,
+.cofnij {
+   width: 42px;
+   height: 43px;
+   margin: 15px 0 0 5px;
+   border-radius: 10px;
+   padding: 7px 0 0 8px;
+   transition: 0.4s ease;
+}
+
+/* ================== JASNY MOTYW ====================== */
+
+.jasny .przyciski {
+   background-color: rgba(240, 113, 74, 0.349);
+   border: 7px solid rgba(219, 79, 23, 0.897);
+}
+
+.jasny .przyciski:hover {
+   background-color: rgba(255, 165, 137, 0.349);
+}
+
+.jasny .czysc,
+.jasny .cofnij {
+   background-color: rgba(253, 91, 42, 0.459);
+   border: 4px solid rgba(255, 11, 11, 0.281);
+}
+.jasny .czysc:hover,
+.jasny .cofnij:hover {
+   background-color: rgba(255, 143, 87, 0.459);
+}
+
+.jasny .tresc {
+   border: 5px solid rgb(234, 71, 21);
+}
+
+.jasny .tresc:hover {
+   border: 5px solid rgba(205, 48, 0, 0.941);
+}
+
+/* ================== CIEMNY MOTYW ====================== */
+
+.ciemny .przyciski {
+   background-color: rgb(188, 30, 209);
+   border: 7px solid rgb(173, 2, 167);
+}
+
+.ciemny .przyciski:hover {
+   background-color: rgb(225, 0, 255);
+}
+
+.ciemny .czysc,
+.ciemny .cofnij {
+   background-color: rgb(195, 100, 219);
+   border: 4px solid rgb(189, 9, 189);
+}
+
+.ciemny .czysc:hover,
+.ciemny .cofnij:hover {
+   background-color: rgb(225, 119, 252);
+}
+
+.ciemny .tresc {
+   border: 5px solid rgb(144, 7, 172);
+}
+.ciemny .tresc:hover {
+   border: 5px solid rgb(188, 32, 219);
+}

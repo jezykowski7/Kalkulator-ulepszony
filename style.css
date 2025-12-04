@@ -1,0 +1,131 @@
+/* plik zawiera style dla każdej strony*/
+
+* {
+  user-select: none;
+}
+
+body {
+  font-family: "Story Script", sans-serif;
+  font-style: normal;
+  margin: 0 !important;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+article {
+  height: 740px;
+  width: 500px;
+  border-radius: 35px;
+  box-shadow: 0 0 5em 1.5em rgba(0, 0, 0, 0.61);
+  backdrop-filter: blur(3vw);
+  zoom: 0.8;
+}
+
+nav {
+  width: 50px;
+  zoom: 0.8;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  outline: none;
+}
+
+a:hover,
+a:focus,
+a:active {
+  color: inherit;
+  text-decoration: none;
+}
+
+.zakladka {
+  font-size: 20px;
+  height: 230px;
+  width: 100px;
+  z-index: -1;
+  writing-mode: vertical-lr;
+  display: flex;
+  justify-content: center;
+  padding-left: 15px;
+  border-radius: 20px;
+  transition: 0.3s ease;
+}
+
+.zakladka:hover {
+  transform: translateX(-30px);
+}
+
+#tuJestes {
+  transform: translateX(-10px);
+  padding-left: 18px;
+}
+
+@media (max-height: 600px),
+(max-width: 480px) {
+  nav,
+  article{
+    zoom: 0.6;
+    backdrop-filter: blur(20vw);
+  }
+}
+
+/* ================== JASNY MOTYW ======================= */
+
+.jasny body {
+  color: white;
+  background: linear-gradient(
+    67deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 1) 50%,
+    rgba(252, 176, 69, 1) 100%
+  );
+}
+
+.jasny article {
+  background: linear-gradient(#ffffff4f, #ffffff2c);
+  border: 3px solid rgb(133, 9, 9);
+}
+
+.jasny .zakladka {
+  background-color: rgba(255, 171, 54, 0.282);
+}
+
+.jasny .zakladka:hover {
+  background-color: rgba(246, 142, 45, 0.766);
+}
+
+.jasny #tuJestes {
+  background-color: rgba(247, 129, 39, 0.621);
+}
+
+/* ================== CIEMNY MOTYW ====================== */
+
+.ciemny body {
+  color: white;
+  background: linear-gradient(
+    50deg,
+    rgba(255, 0, 255, 1) 17%,
+    rgba(126, 18, 184, 1) 60%,
+    rgba(122, 13, 255, 1) 100%
+  );
+}
+
+.ciemny article {
+  box-shadow: 0 0 5em 1.5em rgba(0, 0, 0, 0.8);
+  border: 3px solid rgb(42, 57, 169);
+}
+
+.ciemny .zakladka {
+  background-color: rgb(214, 14, 171);
+}
+
+.ciemny .zakladka:hover {
+  background-color: rgb(236, 49, 195);
+}
+
+.ciemny #tuJestes {
+  background-color: rgba(238, 3, 255, 0.926);
+}

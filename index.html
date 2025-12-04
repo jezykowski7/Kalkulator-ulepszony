@@ -4,19 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kalkulator</title>
-    <link rel="stylesheet" href="Kalkulator-aplikacja/kalkulator.css" /> <!-- style dla index.html -->
-    <link rel="stylesheet" href="Kalkulator-aplikacja/style.css" /> <!-- style wspólne -->
+    <link rel="stylesheet" href="kalkulator/kalkulator.css" /> <!-- style dla index.html -->
+    <link rel="stylesheet" href="style.css" /> <!-- style wspólne -->
 
-    <link rel="stylesheet" href="Kalkulator-aplikacja/fontello-20b0d37c/css/fontello.css" /> <!--ikony fontello (pobrane z fontello.com)-->
+    <link rel="stylesheet" href="fontello-20b0d37c/css/fontello.css" /> <!--ikony fontello (pobrane z fontello.com)-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.11.0/math.min.js"></script> <!--biblioteka math-->
   </head>
 
   <body>
+
     <nav>
       <a class="zakladka" id="tuJestes">Kalkulator</a>
-      <a href="Kalkulator-aplikacja/systemyLiczbowe/systemyLiczbowe.html" class="zakladka">Systemy Liczbowe</a>
-      <a href="Kalkulator-aplikacja/wiecej/wiecej.html" class="zakladka">Więcej</a>
+      <a href="systemyLiczbowe/systemyLiczbowe.html" class="zakladka">Systemy Liczbowe</a>
+      <a href="wiecej/wiecej.html" class="zakladka">Więcej</a>
     </nav>
+
     <article>
       <div id="wyswietlacz">0</div>
 
@@ -50,10 +52,10 @@
         >0</div>
         <div class="przycisk">.</div>
         <div class="przycisk przycisk--op" onclick="liczenie()">=</div>
+
       </div>
     </article>
 
-    <script src="Kalkulator-aplikacja/kalkulator.js"></script><!--Funkcje Javascript-->
+    <script src="kalkulator/kalkulator.js"></script><!--Funkcje Javascript-->
   </body>
 </html>
-
